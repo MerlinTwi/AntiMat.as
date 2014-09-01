@@ -10,7 +10,10 @@ package
 	import flash.text.TextFormat;
 	import flash.utils.getTimer;
 	
-	[SWF( scriptTimeLimit="255" )]
+	/**
+	 * Проверяет шаблоны Antimat на ложные срабатывания
+	 */
+	[SWF( width = "600", height = "600", scriptTimeLimit="255" )]
     public class TestAntimat extends Sprite
     {
 		static private const ABUSIVE_FILE_NAME:String = "text/abusive.txt";
@@ -18,7 +21,7 @@ package
 		static private const MASTER_I_MARGARITA_FILE_NAME:String = "text/Master_i_Margarita.txt";
 		static private const WIKI_WORDS_FILE_NAME:String = "text/wiki_freq.txt";
 		static private const ALL_RU_WORDS_FILE_NAME:String = "text/all_ru_worlds.txt";
-		static private const PREDLOG:Array = ['в', 'до', 'из', 'к', 'на', 'не', 'нет', 'да', 'же', 'ее', 'по', 'о', 'от', 'он', 'ох', 'ах', 'с', 'у', 'за', 'об'];
+		static private const PREDLOG:Array = ['в', 'до', 'из', 'к', 'на', 'не', 'нет', 'да', 'же', 'ее', 'по', 'о', 'от', 'он', 'ох', 'ах', 'с', 'у', 'за', 'об', 'как', 'но'];
 		
 		private var tf:TextField;
 		private var loader:URLLoader;
